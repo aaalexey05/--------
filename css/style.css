@@ -1,0 +1,21 @@
+.block, .inline {
+  font-size: 2rem;
+}
+
+.line {
+  background-color: #333;
+  height: 5px;
+  margin: 50px 0;
+}
+
+.content-1__block {
+  box-sizing: border-box;
+  background-color: #836969;
+  color: lemonchiffon;
+  /* padding: 50px; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
