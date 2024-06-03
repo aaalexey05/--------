@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            
+            System.Console.WriteLine("Hello wor.d");
         }
     }
 }
