@@ -1,110 +1,21 @@
-.block, .inline {
-  font-size: 2rem;
+.wrapper {
+  padding: 100px 100px 30vh;
+  height: 200vh;
 }
 
-.line {
-  background-color: #333;
-  height: 5px;
-  margin: 50px 0;
+.block {
+  height: 100%;
+  box-shadow: 0 0 10px rgb(83, 83, 83);
+  border-radius: 5px;
 }
 
-.content-1__block {
-  box-sizing: border-box;
-  background-color: #836969;
-  color: lemonchiffon;
-  /* padding: 50px; */
-  padding: 50px 150px 100px 10px;
-}
-
-.content-1__inline {
-  padding: 50px;
-}
-
-.content-2__image {
-  padding: 50px;
-  margin: 50px;
-}
-
-.content-2__image {
-  height: 300px;
-  width: 300px;
-  background-color: #333;
-}
-
-
-.content-2__block-wrapper {
-  background: #999;
-  padding: 50px 50px 0;
-}
-
-.content-2__block {
-  background-color: #836969;
-  margin-bottom: 50px;
-}
-
-.content-3__image {
-  height: 300px;
-  width: 300px;
-  background-color: #333;
-}
-
-.content-3__block {
-  width: 400px;
-  height: 200px;
-  /* min-width: 300px;
-  max-width: 700px;
-  min-height: 100px;
-  max-height: 700px; */
-  background-color: #c95f5f;
-  overflow: hidden;
-  /* display: inline; */
-}
-
-.content-3__inline {
-  min-width: 300px;
-  max-width: 700px;
-  display: block;
-}
-
-.content-3__image {
-  min-height: 400px;
-  max-height: 700px;
-  min-width: 400px;
-  max-width: 700px;
-}
-
-.content-3__block-2 {
-  width: 300px;
-  height: 300px;
-  background-color: #2b2b2b;
-  display: inline-block;
-}
-
-.content-4__block {
-  margin: 50px;
-  border: 5px solid #362929;
-  /* border-width: 5px;
-  border-style: dashed;
-  border-color: #9d0edf; */
-  /* border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
-  border-right: 5px dashed #000;
-  border-left: 5px dashed #000; */
-  border-style: solid;
-  box-shadow: inset 10px 10px 45px 20px #39373a;
-}
-
-.content-4__inline {
-  /* border: 3px solid #6c8aca; */
-  box-shadow: inset 5px 5px 10px 10px #362929;
-}
-
-.content-4__image{
-  width: 400px;
-  height: 400px;
-  background-color: #837786;
-  border: 7px solid rgb(109, 161, 157);
-  box-shadow:  5px 5px 10px 10px #456e6b;
-  opacity: 1;
-  visibility: ;
+.block {
+  background: #348a55 ;
+  background: linear-gradient(270deg, #333, #348a55);
+  background: radial-gradient(#333, #348a55);
+  background-image: url("../post-91315-1269172010.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: local;
+  background-size: cover;
 }
