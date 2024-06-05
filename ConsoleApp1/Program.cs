@@ -6,11 +6,18 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            int a;
-            a = Convert.ToInt32(Console.ReadLine());
-            System.Console.WriteLine(a);
+            int i;
+            for(i = -5; i <= 5; i++) {
+                System.Console.Write($"Check {i} :");
+
+                if(i < 0) System.Console.WriteLine("-n");
+                else System.Console.WriteLine("+n");
+            }
         }
     }
 }
+
+
+
 
 
