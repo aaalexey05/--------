@@ -49,7 +49,7 @@ p {
   text-shadow: rgb(169, 169, 169) 3px 3px 5px;
 }
 
-.info {
+aside#info {
   background-color: rgb(236, 236, 236);
   border-bottom-color: rgb(2, 87, 163);
   border-bottom-style: dotted;
@@ -59,18 +59,25 @@ p {
   border-top-width: 10px;
   color: rgb(0,0,0,);
   display: block;
-  font-size: 29.3333px;
+  font-family: 'Times New Roman', Times, serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
+  font-size: 29.3333px;
   font-stretch: 100%;
   font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
   font-weight: 400;
+  /* height: 93.3333px; */
   line-height: 29.3333px;
-  margin-bottom: 0px;
-  margin-left: 256px;
+  margin-bottom: 10px;
+  margin-left: 0px;
   margin-right: 0px;
-  margin-top: -110px;
+  margin-top: -10px;
   padding-bottom: 5px;
   padding-left: 16px;
   padding-right: 16px;
@@ -80,13 +87,13 @@ p {
   width: 736px;
 }
 
-.personinfo {
+span#personinfo {
   background-color: rgb(236, 236, 236);
   border-bottom-color: rgb(2, 87, 163);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-top-color: rgb(2, 87, 163);
-  border-top-style: solid;
+  /* border-top-style: solid; */
   border-top-width: 10px;
   color: rgb(0,0,0,);
   display: block;
@@ -96,12 +103,12 @@ p {
   font-optical-sizing: auto;
   font-stretch: 100%;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 29.3333px;
-  margin-bottom: 0px;
-  margin-left: 256px;
+  margin-bottom: -6px;
+  margin-left: -15px;
   margin-right: 0px;
-  margin-top: -110px;
+  margin-top: -10px;
   padding-bottom: 5px;
   padding-left: 16px;
   padding-right: 16px;
@@ -321,4 +328,30 @@ th.bottom.center {
   text-wrap: wrap;
   vertical-align: top;
   white-space-collapse: collapse;
+}
+
+th.bottom.rightb.right.w33 {
+  border-bottom-color: rgb(128, 128, 128);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-collapse: separate;
+  border-right-color: rgb(128, 128, 128);
+  border-right-style: dotted;
+  border-right-width: 1px;
+  display: table-cell;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400px;
 }
