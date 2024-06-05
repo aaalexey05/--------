@@ -111,7 +111,7 @@ p {
   width: 736px;
 }
 
-.content {
+section#content {
   display: block;
   float: right;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -163,7 +163,7 @@ h3 {
   text-shadow: rgb(169, 169, 169);
 }
 
-.lastupdate {
+p.lastupdate {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(0, 255, 0);
   border-bottom-left-radius: 8px;
@@ -225,6 +225,67 @@ h3 {
   background-color: rgb(177, 236, 177);
 }
 
+.editableList {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  display: table;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  line-height: 19.6667px;
+  margin-top: 10px;
+  text-align: left;
+  text-indent: 0px;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 738px;
+}
+
+tr {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  display: table-row-group;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-feature-settings: normal;
+  font-weight: 400;
+  line-height: 18.6667px;
+  text-align: left;
+  text-indent: 0px;
+  text-wrap: wrap;
+  vertical-align: middle;
+  white-space-collapse: collapse;
+}
+
 th.bottom.center {
   background-color: rgb(207, 207, 207);
   border-bottom-color: rgb(128, 128, 128);
@@ -250,4 +311,14 @@ th.bottom.center {
   font-variant-position: normal;
   font-variation-settings: normal;
   font-weight: 700;
+  line-height: 18.6667px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  text-align: center;
+  text-indent: 0px;
+  text-wrap: wrap;
+  vertical-align: top;
+  white-space-collapse: collapse;
 }
