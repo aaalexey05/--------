@@ -9,19 +9,85 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>CSS lesson 10</title>
+  <style>
+    div{
+        margin: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+        height: 80px;
+    }
+    #header{ 
+        background-color: #ccc;
+    }
+    #sidebar{
+        background-color: #ddd;
+    }
+    #main{
+        background-color: #eee;
+        height: 200px;
+    }
+    #footer{ 
+        background-color: #ccc;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <div class="block red"></div>
-      <div class="block blue"></div>
-      <div class="block orange"></div>
-      <div class="block green"></div>
-      <div class="block purple"></div>
-    </div>
+  <div id="sitename">
+    <h1>
+      <a href="L">Личный кабинет</a>
+    </h1>
+    <p>Информационная система для академической общественности АлтГПУ</p>  
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <aside id="info">
+    Шиляев Алексей Дмитриевич
+    <span id="personinfo">
+      студент
+      <br>
+      группа 3315д • институт информационных технологий и физико-математического образования
+      <br>
+      сегодня 5 июня 2024 г. • II квартал
+    </span>
+  </aside>
+
+  <section id="content">
+    <h3>Академические достижения</h3>
+    <p class="lastupdate">
+      <span></span>
+      Последняя синхронизация с ИС "Галактика" произведена 30 мая 2024 г.
+    </p>
+    <p class="lastupdate">
+      <span></span>
+      Последняя синхронизация с ИС "1С:Университет ПРОФ" произведена 30 мая 2024 г.
+    </p>
+    <table class="editableList"></table>
+    <tbody>
+      <tr>
+        <th colspan="2" class="bottom center">Академическая карточка студента</th>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+    </tbody>
+  </section>
+  
+  
+  <div id="sidebar">Сайбар</div>
+  <div id="main">Основное содержимое</div>
+  <div id="footer">Футер</div>
+
 </body>
 
 </html>
