@@ -6,16 +6,25 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            int i;
-            for(i = -5; i <= 5; i++) {
-                System.Console.Write($"Check {i} :");
+            int[,] array;
+            int[,] array2 = new int[2, 3];
 
-                if(i < 0) System.Console.WriteLine("-n");
-                else System.Console.WriteLine("+n");
-            }
+            int[,] array3 = {
+                {2, 3, 4}, 
+                {4, 5, 1}, 
+                {7, 8, 9}
+                };
+
+            int[,] array4 = new int[2, 3] {
+                {9, 8, 7}, 
+                {6, 5, 4}};
+
+            System.Console.WriteLine(array4[0,0]);
+
         }
     }
 }
+
 
 
 
