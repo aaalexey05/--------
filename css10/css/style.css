@@ -232,7 +232,7 @@ p.lastupdate {
   background-color: rgb(177, 236, 177);
 }
 
-.editableList {
+table.editableList {
   border-bottom-color: rgb(128, 128, 128);
   border-collapse: separate;
   border-left-color: rgb(128, 128, 128);
@@ -261,6 +261,36 @@ p.lastupdate {
   text-wrap: wrap;
   white-space-collapse: collapse;
   width: 738px;
+}
+
+tbody {
+border-bottom-color: rgb(128, 128, 128);
+border-collapse: separate;
+border-left-color: rgb(128, 128, 128);
+border-right-color: rgb(128, 128, 128);
+border-top-color: rgb(128, 128, 128);
+display: table-row-group;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-optical-sizing: auto;
+font-size: 16px;
+font-stretch: 100%;
+font-style: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 400;
+line-height: 18.6667px;
+text-align: left;
+text-indent: 0px;
+text-wrap: wrap;
+vertical-align: middle;
+white-space-collapse: collapse;
 }
 
 tr {
@@ -354,4 +384,16 @@ th.bottom.rightb.right.w33 {
   font-variant-position: normal;
   font-variation-settings: normal;
   font-weight: 400px;
+  line-height: 18.6667px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  text-align: right;
+  text-indent: 0px;
+  text-wrap: wrap;
+  vertical-align: top;
+  white-space-collapse: collapse;
+  width: 234.531px;
 }
+

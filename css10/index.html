@@ -12,61 +12,128 @@
 </head>
 
 <body>
-  <div id="sitename">
-    <h1>
-      <a href="L">Личный кабинет</a>
-    </h1>
-    <p>Информационная система для академической общественности АлтГПУ</p>  
-  </div>
-
-  <br>
-
-  <aside id="info">
-    Шиляев Алексей Дмитриевич
-    <span id="personinfo">
-      студент
-      <br>
-      группа 3315д • институт информационных технологий и физико-математического образования
-      <br>
-      сегодня 5 июня 2024 г. • II квартал
-    </span>
-  </aside>
-
-  <section id="content">
-    <h3>Академические достижения</h3>
-    <p class="lastupdate">
-      <span>&nbsp;</span>
-      Последняя синхронизация с ИС "Галактика" произведена 30 мая 2024 г.
-    </p>
-    <p class="lastupdate">
-      <span>&nbsp;</span>
-      Последняя синхронизация с ИС "1С:Университет ПРОФ" произведена 30 мая 2024 г.
-    </p>
-    <table class="editableList"></table>
-    <tbody>
-      <tr>
-        <th colspan="2" class="bottom center">Академическая карточка студента</th>
-      </tr>
-      <tr>
-        <td class="bottom right rightb w33">Фамилия, имя и отчество</td>
-        <td class="persona bottom">Шиляев Алексей Дмитриевич</td>
-      </tr>
-      <!-- <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr> -->
-    </tbody>
-  </section>
+  <div id="container">
+    <header>
+      <div id="sitename">
+        <h1><a href="/">Личный кабинет</a></h1>
+        <p>Информационная система для академической общественности АлтГПУ</p>
+      </div>
+      <h2 id="main-uni"><a href="https://www.altspu.ru/"><span>ФГБОУ ВО &quot;Алтайский государственный педагогический университет&quot;</span></a></h2>
+      <aside id="info">
+        Шиляев Алексей Дмитриевич<span id='personinfo'>
+  студент
+  <br />группа 3315д &bull; институт информационных технологий и физико-математического образования
+  <br />сегодня 7 июня 2024 г. &bull; II квартал</span>		
+      </aside>	
+    </header>  
+    
+    <div id="content-container">
+      <section id="content">
+        <h3>Академические достижения</h3>
+        
+        <p class='lastupdate'><span>&nbsp;</span>Последняя синхронизация с ИС &quot;Галактика&quot; произведена 30 мая 2024 г.</p>
+  <p class='lastupdate'><span>&nbsp;</span>Последняя синхронизация с ИС &quot;1С:Университет ПРОФ&quot; произведена 30 мая 2024 г.</p>
+  <table class='editableList'>
+  <tr><th colspan='2' class='bottom center'>Академическая карточка студента</th></tr>
+  <tr><td class='bottom rightb right w33'>Фамилия, имя и отчество:</td><td class='persona bottom'>Шиляев Алексей Дмитриевич</td></tr>
+  <tr><td class='bottom rightb right w33'>Дата рождения:</td><td class='persona bottom'>22 февраля 2005 г.</td></tr>
+  <tr><td class='bottom rightb right w33'>Год поступления в вуз:</td><td class='persona bottom'>2023</td></tr>
+  <tr><td class='bottom rightb right w33'>Подразделение:</td><td class='persona bottom'>Институт информационных технологий и физико-математического образования</td></tr>
+  <tr><td class='bottom rightb right w33'><abbr title='Образовательная программа высшего образования'>Образовательная программа</abbr>:</td><td class='persona bottom'>09.03.03 Прикладная информатика: Информационное обеспечение бизнес-процессов</td></tr>
+  <tr><td class='bottom rightb right w33'><abbr title='Указан нормативный срок по очной форме обучения'>Нормативный срок обучения</abbr>:</td><td class='persona bottom'>4 года </td></tr>
+  <tr><td class='bottom rightb right w33'>Реальный срок обучения:</td><td class='persona bottom'>4 года  (48 месяцев)</td></tr>
+  <tr><td class='bottom rightb right w33'>Квалификация:</td><td class='persona bottom'>бакалавриат</td></tr>
+  <tr><td class='bottom rightb right w33'>Уровень подготовки:</td><td class='persona bottom'>бакалавриат</td></tr>
+  <tr><td class='bottom rightb right w33'>Форма обучения:</td><td class='persona bottom'>очная</td></tr>
+  <tr><td class='bottom rightb right w33'>Основание обучения:</td><td class='persona bottom'>бюджет</td></tr>
+  <tr><td class='bottom rightb right w33'>Номер зачётной книжки:</td><td class='persona bottom'>230030032</td></tr>
+  <tr><td class='bottom rightb right w33'>Курс обучения:</td><td class='persona bottom'>1</td></tr>
+  <tr><td class='bottom rightb right w33'>Группа:</td><td class='persona bottom'>3315д</td></tr>
+  <tr><td class='bottom rightb right w33'>Текущий статус:</td><td class='persona bottom'>учится</td></tr>
+  </table><p>За время обучения сдал(а) зачёты, промежуточные и итоговые экзамены по следующим видам учебной деятельности:</p><table class='editableList changelog'>
+  <tr><th class='bottom rightb center'>№</th><th class='bottom rightb center'><abbr title='Семестр'>С.</abbr></th><th class='bottom rightb center'>Наименование дисциплины, курсовые работы, практика</th><th class='bottom rightb center'>Кол-во часов / <abbr title='Зачётные единицы'>З.Е.</abbr></th><th class='bottom rightb center'>Итоговая оценка</th><th class='bottom rightb center'><abbr title='Итоговая оценка в ECTS'>ECTS</abbr></th><th class='bottom center'><abbr title='Баллы'>Б.</abbr></th></tr>
+  <tr><td class='bottom rightb center '>1</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Алгоритмизация и программирование </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>77</em></td>
+  </tr>
+  <tr><td class='bottom rightb center '>2</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Архитектура компьютера </td>
+  <td class='bottom rightb center '>144 / 4</td>
+  <td class='bottom rightb center '>хорошо</td>
+  <td class='bottom rightb center '>C</td>
+  <td class='bottom center '>70</td>
+  </tr>
+  <tr><td class='bottom rightb center '>3</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Вычислительные системы, сети и телекоммуникации </td>
+  <td class='bottom rightb center '>180 / 5</td>
+  <td class='bottom rightb center '>хорошо</td>
+  <td class='bottom rightb center '>C</td>
+  <td class='bottom center '>70</td>
+  </tr>
+  <tr><td class='bottom rightb center '>4</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Иностранный язык </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>75</em></td>
+  </tr>
+  <tr><td class='bottom rightb center '>5</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Математика </td>
+  <td class='bottom rightb center '>144 / 4</td>
+  <td class='bottom rightb center '>удовлетворительно</td>
+  <td class='bottom rightb center '>D</td>
+  <td class='bottom center '>63</td>
+  </tr>
+  <tr><td class='bottom rightb center '>6</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Общая физика </td>
+  <td class='bottom rightb center '>108 / 3</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>77</em></td>
+  </tr>
+  <tr><td class='bottom rightb center '>7</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Основы российской государственности </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>80</em></td>
+  </tr>
+  <tr><td class='bottom rightb center '>8</td>
+  <td class='bottom rightb center '>1</td>
+  <td class='bottom rightb '>Физическая культура и спорт </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>51</em></td>
+  </tr>
+  <tr><td class='bottom right bgLightGray' colspan='4'><em>Средняя оценка за 1-й семестр</em>:</td><td class='bottom center bgLightGray'><em>3.67</em></td><td class='bottom bgLightGray' colspan='2'>&nbsp;</td></tr><tr><td class='bottom rightb center '>9</td>
+  <td class='bottom rightb center '>2</td>
+  <td class='bottom rightb '>Алгоритмизация и программирование </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>72</em></td>
+  </tr>
+  <tr><td class='bottom rightb center '>10</td>
+  <td class='bottom rightb center '>2</td>
+  <td class='bottom rightb '>Информационные системы и технологии </td>
+  <td class='bottom rightb center '>72 / 2</td>
+  <td class='bottom rightb center '>зачтено</td>
+  <td class='bottom rightb center '></td>
+  <td class='bottom center '><em>88</em></td>
+  </tr>
+  <tr><td class='bottom right bgLightGray' colspan='4'><em>Средняя оценка за 2-й семестр</em>:</td><td class='bottom center bgLightGray'><em>0.00</em></td><td class='bottom bgLightGray' colspan='2'>&nbsp;</td></tr><tr><td class='bottom rightb right' colspan='3'>&nbsp;</td><td class='bottom rightb center'><abbr title='Всего часов и зачётных единиц'>1008&nbsp;/&nbsp;28.00</abbr></td><td class='bottom rightb center'><abbr title='Средняя оценка'>3.67</abbr></td><td class='bottom center' colspan='2'><abbr title='Средний балл'>72.30</abbr></td></tr></table>
+      </section>
 </body>
 
 </html>
