@@ -6,13 +6,19 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            int i;
-            for(i = -5; i <= 5; i++) {
-                System.Console.Write($"Check {i} :");
+            for(int i = 0; i <= 3; i++) {
+                System.Console.WriteLine("Подсчёт во внешнем цикле: " + i);
+                System.Console.Write("Подсчёт во внутреннем цикле: ");
 
-                if(i < 0) System.Console.WriteLine("-n");
-                else System.Console.WriteLine("+n");
+                int t = 0;
+                while(t < 100) {
+                    if (t == 10) break;
+                    System.Console.Write(t + " ");
+                    t++;
+                }
+                System.Console.WriteLine();
             }
+            System.Console.WriteLine("Все циклы завершены.");
         }
     }
 }
