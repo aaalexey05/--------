@@ -1,10 +1,8 @@
-import numpy as np
-from scipy.integrate import quad
+import nltk
+from nltk.tokenize import word_tokenize
 
-def f(x):
-    return np.exp(-x ** 2)
+text = "This is a example sentence for tokenization."
 
-result, error = quad(f, -np.inf, np.inf)
+tokens = word_tokenize(text)
 
-print(f"Result: {result}")
-print(f"Error: {error}")
+print(tokens)
