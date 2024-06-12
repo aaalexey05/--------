@@ -57,6 +57,14 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 - Data cleaning and preprocessing
 - Data visualization using matplotlib
 - Statistical analysis and hypothesis testing
+- **Design IMT Calculator**:
+![](https://github.com/aaalexey05/--------/blob/main/file/image4.png)
+
+- **Design Generation Password**:
+![](https://github.com/aaalexey05/--------/blob/main/file/image5.png)
+  
+- **JSON**:
+![](https://github.com/aaalexey05/--------/blob/main/file/image6.png)     
 
 ### Project 2: Python Web Scraper
 **Description**: A web scraping tool built with Python that extracts data from websites. The project uses BeautifulSoup and requests libraries to fetch and parse HTML content.
@@ -65,6 +73,8 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 - Fetching HTML content from web pages
 - Parsing and extracting specific data
 - Storing extracted data into a CSV file
+- **Design**:
+![](https://github.com/aaalexey05/--------/blob/main/file/image3.png)  
 
 ## HTML and CSS Project
 
@@ -78,7 +88,7 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 **Before and After Images**:
 - **Original Design**:
-![](https://github.com/aaalexey05/--------/blob/main/file/image.png)    
+![](https://github.com/aaalexey05/--------/blob/main/file/image2.png)    
 
 - **New Design**:
 ![](https://github.com/aaalexey05/--------/blob/main/file/image1.png)    
