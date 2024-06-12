@@ -78,12 +78,9 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 **Before and After Images**:
 - **Original Design**:
-  ![Original Design]([![image](https://github.com/aaalexey05/--------/assets/170429699/5011b86c-32f1-4b50-b89f-fa27c3db56da](https://github.com/aaalexey05/--------/blob/main/file/image.png
-))
-)
+  ![Original Design]([![image](https://github.com/aaalexey05/--------/assets/170429699/5011b86c-32f1-4b50-b89f-fa27c3db56da](https://github.com/aaalexey05/--------/blob/main/file/image.png)))
 - **New Design**:
-  ![New Design]([![image](https://github.com/aaalexey05/--------/assets/170429699/23775398-2b82-40e1-a7e0-ca23feacb04a](https://github.com/aaalexey05/--------/blob/main/file/image.png))
-)
+  ![New Design]([![image](https://github.com/aaalexey05/--------/assets/170429699/23775398-2b82-40e1-a7e0-ca23feacb04a](https://github.com/aaalexey05/--------/blob/main/file/image.png)))
 
 ---
 
