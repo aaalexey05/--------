@@ -50,7 +50,7 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 ## Python Projects
 
-### Project 1: Python Example Project
+### Project 1: Python Calculator Project
 **Description**: This project demonstrates a simple Python script that performs data analysis on a given dataset. It includes functionalities for data cleaning, visualization, and statistical analysis.
 
 **Features**:
@@ -78,9 +78,11 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 **Before and After Images**:
 - **Original Design**:
-  ![Original Design](path_to_original_image.jpg)
+  ![Original Design](![image](https://github.com/aaalexey05/--------/assets/170429699/5011b86c-32f1-4b50-b89f-fa27c3db56da)
+)
 - **New Design**:
-  ![New Design](path_to_new_image.jpg)
+  ![New Design](![image](https://github.com/aaalexey05/--------/assets/170429699/23775398-2b82-40e1-a7e0-ca23feacb04a)
+)
 
 ---
 
