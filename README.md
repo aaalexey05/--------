@@ -52,11 +52,25 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 ### Project 1: Python Calculator Project
 **Description**: This project demonstrates a simple Python script that performs data analysis on a given dataset. It includes functionalities for data cleaning, visualization, and statistical analysis.
+![](https://github.com/aaalexey05/--------/blob/main/file/image7.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image8.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image9.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image10.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image11.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image12.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image13.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image14.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image15.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image16.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image17.png)
+![](https://github.com/aaalexey05/--------/blob/main/file/image18.png)
+
 
 **Features**:
 - Data cleaning and preprocessing
 - Data visualization using matplotlib
 - Statistical analysis and hypothesis testing
+  
 - **Design IMT Calculator**:
 ![](https://github.com/aaalexey05/--------/blob/main/file/image4.png)
 
