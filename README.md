@@ -46,5 +46,44 @@ We welcome contributions! Please follow these steps:
 
 For questions or suggestions, feel free to open an issue or reach out to: alexeshilyaev@yandex.ru
 
+# Python Projects and HTML/CSS Project Description
+
+## Python Projects
+
+### Project 1: Python Example Project
+**Description**: This project demonstrates a simple Python script that performs data analysis on a given dataset. It includes functionalities for data cleaning, visualization, and statistical analysis.
+
+**Features**:
+- Data cleaning and preprocessing
+- Data visualization using matplotlib
+- Statistical analysis and hypothesis testing
+
+### Project 2: Python Web Scraper
+**Description**: A web scraping tool built with Python that extracts data from websites. The project uses BeautifulSoup and requests libraries to fetch and parse HTML content.
+
+**Features**:
+- Fetching HTML content from web pages
+- Parsing and extracting specific data
+- Storing extracted data into a CSV file
+
+## HTML and CSS Project
+
+### Project: HTML and CSS Redesign
+**Description**: This project showcases a redesign of a webpage using HTML and CSS. It compares the original design with the new design created in this project.
+
+**Features**:
+- Responsive web design
+- Improved layout and typography
+- Enhanced user experience
+
+**Before and After Images**:
+- **Original Design**:
+  ![Original Design](path_to_original_image.jpg)
+- **New Design**:
+  ![New Design](path_to_new_image.jpg)
+
+---
+
+
 
 Happy coding! 🚀
