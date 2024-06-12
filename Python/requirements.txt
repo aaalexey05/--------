@@ -1,0 +1,15 @@
+math
+tkinter
+matplotlib
+random
+ttkthemes
+googletrans
+concurrent
+speech_recognition
+pyttsx3
+datetime
+json
+PIL
+flet
+os
+requests
