@@ -13,7 +13,6 @@ from datetime import datetime
 import json
 from PIL import Image, ImageTk
 
-
 # Создаем объект для синтеза речи
 engine = pyttsx3.init()
 
