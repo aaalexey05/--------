@@ -40,7 +40,7 @@ quite - выход
 """
 
 choice = ''
-while choice != q:
+while choice != 'q':
     choice = input("(h - справка)>> ")
     if choice == 's':
         word = input("Введите слово: ")
