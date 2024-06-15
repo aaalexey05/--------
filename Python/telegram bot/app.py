@@ -15,7 +15,7 @@ async def main(page: ft.Page) -> None:
     score = ft.Text(value="0", size=100, data=0)
     score_counter = ft.Text(size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN))
     image = ft.Image(
-        image="png-transparent-citrus-fruit-tangerine-clementine-orange-fruit-orange-fruit-natural-foods-food-orange-thumbnail.png",
+        scr=f"/telegram bot/png-transparent-citrus-fruit-tangerine-clementine-orange-fruit-orange-fruit-natural-foods-food-orange-thumbnail.png",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
@@ -36,7 +36,7 @@ async def main(page: ft.Page) -> None:
         ),
         ft.Container(
             content=progress_bar,
-            border_radius= ft.BorderRadius(10, 10, 10, 10)
+            border_radius= ft.BorderRadius.all(10)
         )
     )
 
