@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton("Открыть веб страницу", web_app=WebAppInfo(url='')))
+    markup.add(types.KeyboardButton("Открыть веб страницу", web_app=WebAppInfo(url='https://github.com/aaalexey05/--------')))
     await message.answer("Привет, мой друг!", reply_markup=markup)
 
 
