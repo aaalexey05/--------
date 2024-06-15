@@ -13,9 +13,11 @@ async def main(page: ft.Page) -> None:
         pass
 
     score = ft.Text(value="0", size=100, data=0)
-    score_counter = ft.Text(size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN))
+    score_counter = ft.Text(
+        size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN)
+    )
     image = ft.Image(
-        scr=f"/telegram_bot/1.png",
+        scr="1.png",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
