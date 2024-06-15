@@ -17,16 +17,16 @@ async def main(page: ft.Page) -> None:
         size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN)
     )
     image = ft.Image(
-        scr="1.png",
+        src="2.lpg",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
     progress_bar = ft.ProgressBar(
         value=0,
         width=page.width-100,
-        bar_height=20,
-        color='#ff8b1f',
-        bgcolor='#bf6524'
+        bar_height=30,
+        color='#FF8B1F',
+        bgcolor='#BF6524'
     )
 
     await page.add_async(
@@ -38,10 +38,10 @@ async def main(page: ft.Page) -> None:
         ),
         ft.Container(
             content=progress_bar,
-            border_radius= ft.BorderRadius.all(10)
+            border_radius= ft.BorderRadius(10, 10, 10, 10)
         )
     )
 
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER)
