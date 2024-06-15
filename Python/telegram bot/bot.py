@@ -1,15 +1,39 @@
-from aiogram import Bot, Dispatcher, executor, types
-from aiogram.types.web_app_info import WebAppInfo
+import asyncio
 
-bot = Bot('6865556440:AAGZnh7OkUP-w2gwNlG-PYTlFmslkzFwE5w')
-dp = Dispatcher(bot)
-
-
-@dp.message_handler(commands=['start'])
-async def start(message: types.Message):
-    markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton("Открыть веб страницу", web_app=WebAppInfo(url='https://github.com/aaalexey05/--------')))
-    await message.answer("Привет, мой друг!", reply_markup=markup)
+from aiogram import Router, Bot, Dispatcher
+from aiogram.types import Message, WebAppInfo
+from aiogram.filters import CommandStart
+from aiogram.enums import ParseMode
+from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
-executor.start_polling(dp)
+def webapp_builder() -> InlineKeyboardBuilder:
+    builder = InlineKeyboardBuilder
+    builder.button(text="Let's click", web_app=WebAppInfo(
+        url="..."
+        )
+    )
+    return builder.as_markup()
+
+
+router = Router()
+
+
+@router.message(CommandStart())
+async def start(message: Message) -> None:
+    await message.reply("Click, click, click!",
+                        reply_markup=webapp_builder()
+                        )
+
+async def main() -> None:
+    bot = Bot(..., parse_mod = ParseMode.HTML)
+
+    dp = Dispatcher
+    dp.include_router(router)
+
+    await bot.delete_webhook(True)
+    await dp.start_polling(bot)
+
+
+if __name__  == '__main__':
+    asyncio.run(main())
