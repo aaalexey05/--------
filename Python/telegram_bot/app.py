@@ -10,14 +10,17 @@ async def main(page: ft.Page) -> None:
     page.fonts = {"FulboaArgenta": "FulboArgenta.ttf"}
 
     async def score_up(event: ft.ContainerTapEvent) -> None:
-        pass
+        score.data += 1
+        score.value = str(score.data)
+
+        await page.update_async()
 
     score = ft.Text(value="0", size=100, data=0)
     score_counter = ft.Text(
-        size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN)
+        size=50, animate_opacity=ft.Animation(duration=800, curve=ft.AnimationCurve.BOUNCE_IN)
     )
     image = ft.Image(
-        src="mandarin.jpg",
+        src="/telegram_bot/3.png",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
