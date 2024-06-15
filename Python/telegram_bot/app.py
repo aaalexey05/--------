@@ -7,7 +7,6 @@ async def main(page: ft.Page) -> None:
     page.bgcolor = "#411221"
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
-    page.fonts = {"FulboaArgenta": "FulboArgenta.ttf"}
 
     async def score_up(event: ft.ContainerTapEvent) -> None:
         score.data += 1
