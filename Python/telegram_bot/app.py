@@ -17,7 +17,7 @@ async def main(page: ft.Page) -> None:
         size=50, animate_opacity=ft.Animation(duration=600, curve=ft.AnimationCurve.BOUNCE_IN)
     )
     image = ft.Image(
-        src="2.lpg",
+        src="3.png",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
