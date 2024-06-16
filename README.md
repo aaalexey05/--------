@@ -84,31 +84,34 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 
 This Python script demonstrates a simple weather application using the `flet` library for GUI and the OpenWeatherMap API for weather data.
 
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Usage Instructions](#usage-instructions)
+- [Notes](#notes)
+
 ## Features
 
-- **GUI Features:**
-  - Dark theme by default, with an option to switch to light theme.
-  - Fixed window size (400x400) that is not resizable.
-  - Accepts user input for city name to fetch weather information.
+- **GUI Components:**
+  - **Dark Theme:** The application defaults to a sleek and modern dark theme, enhancing readability of weather information.
+  - **Fixed Window Size:** The window is set to 400x400 pixels to maintain a consistent layout, with no option for resizing.
+  - **User Input:** Users interact by entering a city name into the text field labeled "Введите город" to fetch weather data.
 
-- **Weather Information:**
-  - Retrieves current temperature (in Celsius) and city name from OpenWeatherMap API based on user input.
-  - Displays retrieved weather and city information dynamically on the GUI.
-
-## How to Use
+- **Weather Data Retrieval:**
+  - **API Integration:** Utilizes the OpenWeatherMap API to fetch current weather data for the specified city.
+  - **Dynamic Updates:** Upon successful retrieval, the temperature (`temp`) and city name (`name_t`) are dynamically updated in the GUI.
 
 ### Prerequisites
 
+Ensure you have the following installed:
+
 - Python 3.x
-- `flet` library (`import flet as ft`)
-- `requests` library (`import requests`)
+- Required Python libraries:
+  ```bash
+  pip install flet requests
 
-### Installation
-
-1. Install required libraries:
-   ```bash
-   pip install flet requests
-Obtain an API key from OpenWeatherMap and replace '60bae81ae39635b5df3073ffb3dd2f22' with your 'API' key in the API variable.
 - **Design**:
 ![](https://github.com/aaalexey05/--------/blob/main/file/image3.png)  
 
