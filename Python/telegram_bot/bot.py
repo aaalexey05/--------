@@ -1,39 +1,16 @@
-import asyncio
+import telebot
 
-from aiogram import Router, Bot, Dispatcher
-from aiogram.types import Message, WebAppInfo
-from aiogram.filters import CommandStart
-from aiogram.enums import ParseMode
-from aiogram.utils.keyboard import InlineKeyboardBuilder
+bot = telebot.TeleBot('6865556440:AAGZnh7OkUP-w2gwNlG-PYTlFmslkzFwE5w')
 
 
-def webapp_builder() -> InlineKeyboardBuilder:
-    builder = InlineKeyboardBuilder
-    builder.button(text="Let's click", web_app=WebAppInfo(
-        url="..."
-        )
-    )
-    return builder.as_markup()
+@bot.message_handler(commands=['start'])
+def main(message):
+    bot.send_message(message.chat.id, message)
 
 
-router = Router()
+@bot.message_handler(command=['help'])
+def main(message):
+    bot.send_message(message.chat.id, "<b>Help</b> <em><u>information</u></em>", parse_mode="html")
 
 
-@router.message(CommandStart())
-async def start(message: Message) -> None:
-    await message.reply("Click, click, click!",
-                        reply_markup=webapp_builder()
-                        )
-
-async def main() -> None:
-    bot = Bot(..., parse_mod = ParseMode.HTML)
-
-    dp = Dispatcher
-    dp.include_router(router)
-
-    await bot.delete_webhook(True)
-    await dp.start_polling(bot)
-
-
-if __name__  == '__main__':
-    asyncio.run(main())
+bot.polling(non_stop=True)

@@ -80,15 +80,41 @@ For questions or suggestions, feel free to open an issue or reach out to: alexes
 - **JSON**:
 ![](https://github.com/aaalexey05/--------/blob/main/file/image6.png)     
 
-### Project 2: Python Web Scraper
-**Description**: A web scraping tool built with Python that extracts data from websites. The project uses BeautifulSoup and requests libraries to fetch and parse HTML content.
+# Weather App using `flet` and OpenWeatherMap API
 
-**Features**:
-- Fetching HTML content from web pages
-- Parsing and extracting specific data
-- Storing extracted data into a CSV file
+This Python script demonstrates a simple weather application using the `flet` library for GUI and the OpenWeatherMap API for weather data.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Usage Instructions](#usage-instructions)
+- [Notes](#notes)
+
+## Features
+
+- **GUI Components:**
+  - **Dark Theme:** The application defaults to a sleek and modern dark theme, enhancing readability of weather information.
+  - **Fixed Window Size:** The window is set to 400x400 pixels to maintain a consistent layout, with no option for resizing.
+  - **User Input:** Users interact by entering a city name into the text field labeled "Введите город" to fetch weather data.
+
+- **Weather Data Retrieval:**
+  - **API Integration:** Utilizes the OpenWeatherMap API to fetch current weather data for the specified city.
+  - **Dynamic Updates:** Upon successful retrieval, the temperature (`temp`) and city name (`name_t`) are dynamically updated in the GUI.
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.x
+- Required Python libraries:
+  ```bash
+  pip install flet requests
+
 - **Design**:
 ![](https://github.com/aaalexey05/--------/blob/main/file/image3.png)  
+
 
 ## HTML and CSS Project
 
