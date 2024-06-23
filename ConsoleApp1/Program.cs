@@ -40,17 +40,23 @@ namespace ConsoleApp1
                         break;
                     case 2:
                         string author;
+                        bool authorIsFound = false;
                         System.Console.Write("Введите автора: ");
                         author = Console.ReadLine();
                         for (int i = 0; i < books.GetLength(0); i++)
                         {
                             for (int j = 0; j < books.GetLength(1); j++)
                             {
-                                if (author == books[i, j])
+                                if (author.ToLower() == books[i, j].ToLower())
                                 {
                                     System.Console.Write($"Автор {books[i ,j]} находится по адресу: полка {i + 1}, место {j + 1}.");
+                                    authorIsFound = true;
                                 }
                             }
+                        }
+                        if(authorIsFound == false) 
+                        {
+                            System.Console.WriteLine("Автор не найден, повторите попытку...");
                         }
                         break;
                     case 3:
