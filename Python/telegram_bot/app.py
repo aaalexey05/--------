@@ -18,14 +18,16 @@ async def main(page: ft.Page) -> None:
     score_counter = ft.Text(
         size=50, animate_opacity=ft.Animation(duration=800, curve=ft.AnimationCurve.BOUNCE_IN)
     )
+
     image = ft.Image(
-        src="/telegram_bot/3.png",
+        src="3.png",
         fit=ft.ImageFit.CONTAIN,
         animate_scale=ft.Animation(duration=600, curve=ft.AnimationCurve.EASE)
     )
+
     progress_bar = ft.ProgressBar(
         value=0,
-        width=page.width-100,
+        width=page.width-150,
         bar_height=30,
         color='#FF8B1F',
         bgcolor='#BF6524'
@@ -46,4 +48,4 @@ async def main(page: ft.Page) -> None:
 
 
 if __name__ == "__main__":
-    ft.app(target=main, view=ft.WEB_BROWSER)
+    ft.app(target=main)
