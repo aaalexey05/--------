@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alexey\\.nuget\\packages\\": {}
+    "C:\\Users\\devil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexey\\Desktop\\си шарп и сайт\\--------\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\devil\\Documents\\GitHub\\--------\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\Alexey\\Desktop\\си шарп и сайт\\--------\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\Alexey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexey\\Desktop\\си шарп и сайт\\--------\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\devil\\Documents\\GitHub\\--------\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\devil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\devil\\Documents\\GitHub\\--------\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alexey\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\devil\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
