@@ -15,13 +15,12 @@ namespace ConsoleApp1
             char[,] map = ReadMap("map.txt");
             ConsoleKeyInfo pressdKey = new ConsoleKeyInfo('w', ConsoleKey.W, false, false, false);
             
-            Task.Run(() =>
-            {
-                while(true)
-                {
-                    pressdKey = Console.ReadKey();
-                }
-            });
+            // Task.Run(() =>
+            // {
+            //     while(true)
+            //     {
+            //     }
+            // });
 
             int pacmanX = 1, pacmanY = 1;
             int score = 0;
@@ -43,8 +42,9 @@ namespace ConsoleApp1
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.SetCursorPosition(32, 0);
                 Console.Write($"Score: {score}");
+                pressdKey = Console.ReadKey();
 
-                Thread.Sleep(1000);
+                // Thread.Sleep(1000);
 
             }
         }
