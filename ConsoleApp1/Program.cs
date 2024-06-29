@@ -1,29 +1,26 @@
 ﻿using System;
+using System.Threading;
+using System.IO;
+using System.Formats.Asn1;
+using System.Data;
 
 namespace ConsoleApp1
 {
-        class Building {
-            public int Floors;
-            public int Area;
-            public int Occupant;
+    internal class Program
+    {
+        static void Main()
+        {
+            int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            int sum = 0;
+
+            System.Console.Write("Numbers: ");
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                System.Console.Write(numbers[i] + " ");
+                sum += i;
+            }
+            System.Console.WriteLine($"\nSum = {sum}");
         }
 
-        class DemoBuilding{
-            static void Main(){
-                Building house = new Building();
-                int areaPP;
-
-                house.Occupant = 4;
-                house.Area = 2500;
-                house.Floors = 2;
-
-                areaPP = house.Area / house.Occupant;
-
-                System.Console.WriteLine("Дом имеет:\n " + 
-                house.Floors + " этажа\n  " + 
-                house.Occupant + " жильца\n  " + 
-                house.Area + " кв. фунтов общей площади, из них\n " + 
-                areaPP + " приходится на одного человека");
-        }
     }
 }
