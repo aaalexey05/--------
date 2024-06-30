@@ -11,117 +11,67 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            Console.CursorVisible = false;
+            bool isOpen = true;
 
-            char[,] map = ReadMap("map.txt");
-            ConsoleKeyInfo pressdKey = new ConsoleKeyInfo('w', ConsoleKey.W, false, false, false);
-            
-            // Task.Run(() =>
-            // {
-            //     while(true)
-            //     {
-            //     }
-            // });
-
-            int pacmanX = 1, pacmanY = 1;
-            int score = 0;
-
-
-            while(true)
+            Table[] tables = {new Table(1, 3), new Table(2, 4), new Table(3, 10)};
+        
+            while(isOpen)
             {
+                System.Console.WriteLine("Администрирование кафе.\n");
+
+                for(int i = 0; i < tables.Length; i++){
+                    tables[i].ShowInfo();
+                }
+                    
+                System.Console.Write("\nВведите номер стола: ");
+                int wishTable = Convert.ToInt32(Console.ReadLine()) - 1;
+                System.Console.Write("\nВведите количество мест для брони: ");
+                int disaredPlaces = Convert.ToInt32(Console.ReadLine());
+
+
+                bool isReservationCompleted = tables[wishTable].Reserve(disaredPlaces);
+
+                if(isReservationCompleted)
+                {
+                    System.Console.WriteLine("Бронь прошла успешно!");
+                }
+                else
+                {
+                    System.Console.WriteLine("Бронь не прошла. Недостаточно мест.");
+                }
+
+                System.Console.ReadKey();
                 Console.Clear();
-
-                HandleInput(pressdKey, ref pacmanX, ref pacmanY, map, ref score);
-
-                Console.ForegroundColor = ConsoleColor.DarkBlue;
-                DrawMap(map);
-
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.SetCursorPosition(pacmanX, pacmanY);
-                Console.Write("@");
-
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(32, 0);
-                Console.Write($"Score: {score}");
-                pressdKey = Console.ReadKey();
-
-                // Thread.Sleep(1000);
-
             }
         }
+    }
 
+    class Table{
+        public int Number;
+        public int MaxPlaces;
+        public int FreePlaces;
 
-        private static char[,] ReadMap(string path)
-        {
-            string[] file = File.ReadAllLines("map.txt");
-         
-            char[,] map = new char[GetMaxLengthOfLine(file), file.Length];
-
-            for(int x = 0; x < map.GetLength(0); x++)
-                for(int y=0; y < map.GetLength(1); y++)
-                    map[x,y] = file[y][x];
-
-            return map;
+        public Table(int number, int maxPlaces){
+            Number = number;
+            MaxPlaces = maxPlaces;
+            FreePlaces = maxPlaces;
         }
 
-        private static void DrawMap(char[,] map)
+        public void ShowInfo(){
+            System.Console.WriteLine($"Стол: {Number}. Свободно мест: {FreePlaces} из {MaxPlaces}");
+        }
+
+        public bool Reserve(int places)
         {
-            for(int y=0; y < map.GetLength(1); y++)
+            if(FreePlaces >= places)
             {
-                for(int x = 0; x < map.GetLength(0); x++)
-                {
-                    System.Console.Write(map[x, y]);
-                }
-                System.Console.Write("\n");
+                FreePlaces -= places;
+                return true;
             }
-        }
-
-
-        private static void HandleInput(ConsoleKeyInfo pressedKey, ref int pacmanX, ref int pacmanY, char[,] map, ref int score)
-        {
-            int[] direction = GetDirection(pressedKey);
-
-            int nextPacmanPositionX = pacmanX + direction[0];
-            int nextPacmanPositionY = pacmanY + direction[1];
-
-            char nextCell = map[nextPacmanPositionX, nextPacmanPositionY];
-            if( nextCell == ' ' || nextCell == '.'){
-                pacmanX = nextPacmanPositionX;
-                pacmanY = nextPacmanPositionY;
-
-                if(nextCell == '.')
-                {
-                   score++;
-                   map[nextPacmanPositionX, nextPacmanPositionY] = ' ';
-                }
+            else
+            {
+                return false;
             }
-        }
-
-
-        private static int[] GetDirection(ConsoleKeyInfo pressedKey)
-        {
-            int[] direction = {0, 0};
-            if(pressedKey.Key == ConsoleKey.UpArrow)
-                direction[1] = -1;
-            else if(pressedKey.Key == ConsoleKey.DownArrow)
-                direction[1] = +1;
-            else if(pressedKey.Key == ConsoleKey.LeftArrow)
-                direction[0] = -1;
-            else if(pressedKey.Key == ConsoleKey.RightArrow)
-                direction[0] = +1;
-
-            return direction;
-        }
-
-        private static int GetMaxLengthOfLine(string[] lines)
-        {
-            int maxLength = lines[0].Length;
-
-            foreach (var line in lines)
-                if(line.Length > maxLength)
-                    maxLength = line.Length;
-
-            return maxLength;
         }
     }
 }
