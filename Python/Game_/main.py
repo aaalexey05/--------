@@ -14,8 +14,8 @@ clock = pygame.time.Clock()
 chunk_size = 8
 tile_size = 16
 
-textures = {'0': [pygame.image.load('\Python\2D game\0.png')],
-            '1': [pygame.image.load('\Python\2D game\1.png')]}
+textures = {'0': [pygame.image.load('0.png')],
+            '1': [pygame.image.load('1.png')]}
 
 
 def generate_tile(x, y):
