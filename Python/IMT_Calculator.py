@@ -1,5 +1,6 @@
 import flet as ft
 
+
 def main(page: ft.Page):
 
     page.adaptive = True
@@ -103,7 +104,8 @@ def main(page: ft.Page):
         ft.Row([imt_check_gender], alignment=ft.MainAxisAlignment.CENTER),
 
         ft.Row([ft.ElevatedButton(text='РАССЧИТАТЬ!', on_click=do_imt)],
-               alignment=ft.MainAxisAlignment.CENTER)
+                alignment=ft.MainAxisAlignment.CENTER)
     )
+
 
 ft.app(target=main)
