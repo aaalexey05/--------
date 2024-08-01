@@ -1,0 +1,2 @@
+# Настройки окна
+WINDOW_WIDTH, WINDOW_HEIGHT = 960, 540
